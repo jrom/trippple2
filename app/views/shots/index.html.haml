@@ -1,0 +1,19 @@
+%ul.thumbnails
+  - @shots.each do |shot|
+    %li.span4
+      .thumbnail
+        = image_tag shot.shot_image.trippple.url, :alt => shot.title
+        %h3= shot.title
+        %p 4 Likes by Roger Campos
+
+-# <ul class="thumbnails">
+-#   <% @shots.each do |shot| %>
+-#     <li class="span4">
+-#       <div class="thumbnail">
+-#         <img src="<%= shot.shot_image.trippple.url %>" alt="<%= shot.title %>">
+-#         <h3><%= shot.title %></h3>
+-#         <p>4 Likes by Roger Campos</p>
+-#       </div>
+-#     </li>
+-#   <% end %>
+-# </ul>
